@@ -1,0 +1,9 @@
+<?php
+session_start();
+$_SESSION['sun']=null;
+$_SESSION['spwd']=null;
+session_destroy();
+setcookie('cun','',time()-60*60*24*7);
+setcookie('cpwd','',time()-60*60*24*7);
+header("Location:home.php");
+?>

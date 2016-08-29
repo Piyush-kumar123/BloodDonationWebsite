@@ -1,0 +1,106 @@
+create a table siteuser with following fields
+
+username
+pwd
+firstname
+lastname
+dob
+gender
+email
+contact
+hintq
+hinta
+role
+active
+
+manage.php
+	all fields for above table
+	with 4 submit button
+	save,modify,remove,search
+
+copy manage.php as signup.php
+	remove form fields for col role and active
+	with a single submit button, save
+
+
+copy signup.php as
+	changepwd.php
+	forgetpwd.php
+	signin.php 
+and adjust form as desired
+
+
+common part for all web projects
+	pre-requisite
+		database connectivity
+			modular level
+			or
+			oops level
+		template breaking and merging
+		session and cookie(global variable)
+
+=====================================================
+
+Classification of webpages in a site as per security
+
+1. Anonymous(aparichit)
+	can access content without login
+
+	temp.php
+	home.php
+	signup.php	
+	signin.php
+	forgetpwd.php
+
+	with login
+		Welcome username, logout
+	without login
+		Welcome Guest,
+		new user	 signup
+		existing user	signin
+
+
+2. authentic(parichit)
+	can access content only after login
+
+	changepwd.php
+
+
+
+	with login
+		Welcome username, logout
+	without login
+		redirect to login error page
+		
+
+3. authorised(adhikrit)
+	can access content only after login
+ and specific role
+
+	admin
+		manage.php
+		admin_db.php
+	faculty
+		faculty_db.php
+
+	student
+		student_db.php
+
+	with login and specific role
+		Welcome username, logout
+	else
+		redirect to login error page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
